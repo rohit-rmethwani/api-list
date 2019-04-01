@@ -4,7 +4,7 @@ A collective list of free APIs for use in software and web development.
 
 ## Index
 
-* Message(#message)
+* [Messages](#message)
 
 ### Message
 API | Description | Languages | API KEY AVAILABLE
