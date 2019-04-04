@@ -25,9 +25,6 @@ Ready would be soon available on the XD Plugin store.You can also download it [h
 Open the Canvas:
  1. Select ` menu option ` in the upper right corner of your screen.
  2. Navigate to ` Plugins ` option.
- 
- ![Screenshot](https://github.com/rohitmethwani/api-list/tree/master/ui-components/resources/git.png)
- 
  3. You can see ` Ready Components `. Select which component you want.
  4. The component is ready on your screen.
  5. Or else see the shortcuts for easy usage.
@@ -47,3 +44,5 @@ The components are not placed at your desired place when you trigger the shortcu
 
 ## Contribute to Ready!
 If you know any of the component which is generally used by the designers and can be generalized, feel free to contact me on ` rohit.methwani31@gmail.com `.
+
+ ![Screenshot](https://github.com/rohitmethwani/api-list/tree/master/ui-components/resources/git.png)
