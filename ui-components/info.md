@@ -18,7 +18,9 @@ The plugin provides ready made components which are generalized and can be used 
 #### Coming Soon! 
  - Sidebar
  - Popup and many more.
-
+## How to install?
+Ready would be soon available on the XD Plugin store.You can also download it [here](https://github.com/rohitmethwani/api-list/tree/master/ui-components)! 
+ 
 ## How To use?
 Open the Canvas:
  1. Select ` menu option ` in the upper right corner of your screen.
@@ -42,3 +44,6 @@ The components are not placed at your desired place when you trigger the shortcu
 
 ## Contribute to Ready!
 If you know any of the component which is generally used by the designers and can be generalized, feel free to contact me on ` rohit.methwani31@gmail.com `.
+
+## Example
+ ![Screenshot](https://github.com/rohitmethwani/api-list/tree/master/ui-components/resources/git.png)
