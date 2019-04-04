@@ -14,9 +14,10 @@ The plugin provides ready made components which are generalized and can be used 
  - Textfield Component
  - Button
  - Radio Button
+
 ** COMING SOON COMPONENTS ** 
- - Sidebar
- - Popup and many more.
+  Sidebar
+  Popup and many more.
 
 ## How To use?
 Open the Canvas:
