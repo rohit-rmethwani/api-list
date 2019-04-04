@@ -37,7 +37,7 @@ Example entry
 
 ## Help
 If you have any other queries you can feel free to contact us.
-* [Slack](https://open-tek-workspace.slack.com/join/shared_invite/enQtNTA3NjQ3OTQyODg3LTBkYWJjMmQzOWJmYjI1MGQzMTc4NTRlYjQ2ODljMzE4NzdmZmQzMDY4NjY4NWNiMDgzYzBlOWRmMTA4MjhhODY)
+* Slack - You can join our channel by clicking on [this link](https://open-tek-workspace.slack.com/join/shared_invite/enQtNTA3NjQ3OTQyODg3LTBkYWJjMmQzOWJmYjI1MGQzMTc4NTRlYjQ2ODljMzE4NzdmZmQzMDY4NjY4NWNiMDgzYzBlOWRmMTA4MjhhODY)
 * Email - 
   1. Hardik Thakkar - hthakkar8@gmail.com
   2. Gaurav Punjabi - gaurav.bpunjabi@gmail.com
