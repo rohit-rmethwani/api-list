@@ -10,7 +10,7 @@ You can find the guides for Contribution Or ***How to get Started*** from [here]
 
 ## Index
 
-* [Messages](#message)
+* [Messaging](#message)
 
 ### Message
 API | Description | Languages | API KEY AVAILABLE | IS FREE
