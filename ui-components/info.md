@@ -15,7 +15,7 @@ The plugin provides ready made components which are generalized and can be used 
  - Button
  - Radio Button
  
-##### Coming Soon! 
+#### Coming Soon! 
  - Sidebar
  - Popup and many more.
 
