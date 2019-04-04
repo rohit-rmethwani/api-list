@@ -12,7 +12,7 @@ You can find the guides for Contribution Or ***How to get Started*** from [here]
 
 * [Messaging](#message)
 
-### Message
+### Messaging
 API | Description | Languages | API KEY AVAILABLE | IS FREE
 |---|---|---|---|---|
 | [MSG91](/messaging/msg91/) | Add SMS, Email & Voice APIs into your product | Java, PHP | Yes | NO |
