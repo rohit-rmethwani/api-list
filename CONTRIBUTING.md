@@ -5,7 +5,8 @@
 > So we don't need to scratch our heads when we need a api.
 
 ## Formatting
-Current API Entry format : 
-|API | Description | Languages | API KEY AVAILABLE | IS FREE ?
+Current API Entry format
+
+API | Description | Languages | API KEY AVAILABLE | IS FREE ?
 |---|---|---|---|---|
 | Name of the API | A short description about the api | Languages supported | Is api key provided with the example ? | Is the API free ? |
