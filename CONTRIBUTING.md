@@ -12,4 +12,6 @@ API | Description | Languages | API KEY AVAILABLE | IS FREE ?
 | Name of the API | A short description about the api | Languages supported | Is api key provided with the example ? | Is the API free ? |
 
 Example entry
-` [Google Maps](/maps/google) | A API for including Google maps in your website | Javascript | NO | NO`
+```
+[Google Maps](/maps/google) | A API for including Google maps in your website | Javascript | NO | NO
+```
