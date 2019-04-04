@@ -40,4 +40,9 @@ If you have any other queries you can feel free to contact us.
 1. [Slack](https://open-tek-workspace.slack.com/join/shared_invite/enQtNTA3NjQ3OTQyODg3LTBkYWJjMmQzOWJmYjI1MGQzMTc4NTRlYjQ2ODljMzE4NzdmZmQzMDY4NjY4NWNiMDgzYzBlOWRmMTA4MjhhODY)
 <br>
 OR you can email any one of the members
-1. <b>Gaurav Punjabi : </b> gaurav.bpunjabi@gmail.com
+<br>
+1. Hardik Thakkar - hthakkar8@gmail.com
+2. Gaurav Punjabi - gaurav.bpunjabi@gmail.com
+3. Rahul Ahuja - rahulahuja404@gmail.com
+4. Rohit Methwani - rohit.methwani31@gmail.com
+5. Yash Bhadra - yashbhadra@gmail.com
