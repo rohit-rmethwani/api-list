@@ -6,7 +6,7 @@
 
 ## Instructions
 The steps to add the api to the list pretty basic.
-1. Check whether the API you are planning to add doesn't exists in the list already. (Obviously 🙄)
+1. Check whether the API you are planning to add doesn't exists in the list already.
 2. Make sure you have forked the repository so you can contribute.
 3. Create a branch having the API's name. For example if you are adding a Google Maps Api. 
 Then create a branch named "google-maps".
