@@ -39,5 +39,5 @@ Example entry
 If you have any other queries you can feel free to contact us.
 1. [Slack](https://open-tek-workspace.slack.com/join/shared_invite/enQtNTA3NjQ3OTQyODg3LTBkYWJjMmQzOWJmYjI1MGQzMTc4NTRlYjQ2ODljMzE4NzdmZmQzMDY4NjY4NWNiMDgzYzBlOWRmMTA4MjhhODY)
 <br>
-Or you can email any one of the members : 
+OR you can email any one of the members
 <b> Gaurav Punjabi : </b> gaurav.bpunjabi@gmail.com
