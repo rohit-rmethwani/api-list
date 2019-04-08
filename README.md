@@ -23,4 +23,4 @@ API | Description | Languages | API KEY AVAILABLE
 ### XD
 API | Description | Languages | API KEY AVAILABLE
 |---|---|---|---|
-| [XD](/xd) | Ready made UI Components for Wireframing/Designing | XD | Not needed|
+| [Ready](/xd/ready) | Ready made UI Components for Wireframing/Designing | XD | Not needed|
