@@ -29,8 +29,8 @@ Open the Canvas:
  4. The component is ready on your screen.
  5. Or else see the shortcuts for easy usage.
 
- COMPONENT | WINDOWS SHORTCUT | MAC OS SHORTCUT
- |---|---|
+ COMPONENT | WINDOWS SHORTCUT | MAC OS SHORTCUT |
+ |---|---|---|
  | Card Component | Shift+Ctrl+Alt+C | Cmd+Shift+Alt+C |
  | List Card Component | Shift+Ctrl+Alt+L | Cmd+Shift+Alt+L |
  | Header Component | Shift+Ctrl+Alt+H | Cmd+Shift+Alt+H |
