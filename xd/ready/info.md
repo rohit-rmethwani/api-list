@@ -29,15 +29,15 @@ Open the Canvas:
  4. The component is ready on your screen.
  5. Or else see the shortcuts for easy usage.
 
- COMPONENT | SHORTCUT
+ COMPONENT | WINDOWS SHORTCUT | MAC OS SHORTCUT
  |---|---|
- | Card Component | Shift+Ctrl+Alt+C |
- | List Card Component | Shift+Ctrl+Alt+L |
- | Header Component | Shift+Ctrl+Alt+H | 
- | Footer Component | Shift+Ctrl+Alt+D |
- | Textfield Component | Shift+Ctrl+Alt+F | 
- | Button | Shift+Ctrl+Alt+B | 
- | Toggle Button | Shift+Ctrl+Alt+R |  
+ | Card Component | Shift+Ctrl+Alt+C | Cmd+Shift+Alt+C |
+ | List Card Component | Shift+Ctrl+Alt+L | Cmd+Shift+Alt+L |
+ | Header Component | Shift+Ctrl+Alt+H | Cmd+Shift+Alt+H |
+ | Footer Component | Shift+Ctrl+Alt+D | Cmd+Shift+Alt+D |
+ | Textfield Component | Shift+Ctrl+Alt+F | Cmd+Shift+Alt+F |
+ | Button | Shift+Ctrl+Alt+B | Cmd+Shift+Alt+B |
+ | Toggle Button | Shift+Ctrl+Alt+R |  Cmd+Shift+Alt+R |
 
 ## Drawbacks
 The components are not placed at your desired place when you trigger the shortcut or select from menu. You have to drag the component to your desired place.
