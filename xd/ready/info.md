@@ -37,7 +37,7 @@ Open the Canvas:
  | Footer Component | Shift+Ctrl+Alt+D |
  | Textfield Component | Shift+Ctrl+Alt+F | 
  | Button | Shift+Ctrl+Alt+B | 
- | Radio Button | Shift+Ctrl+Alt+R |  
+ | Toggle Button | Shift+Ctrl+Alt+R |  
 
 ## Drawbacks
 The components are not placed at your desired place when you trigger the shortcut or select from menu. You have to drag the component to your desired place.
