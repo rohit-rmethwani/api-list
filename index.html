@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Notifications Adoption Dashboard</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const labels = [
+        'Sep 2024','Oct 2024','Nov 2024','Dec 2024',
+        'Jan 2025','Feb 2025','Mar 2025','Apr 2025','May 2025','Jun 2025','Jul 2025','Aug 2025','Sep 2025'
+      ];
+
+      const adoptionCounts = [120, 180, 260, 340, 420, 500, 620, 710, 790, 860, 920, 980, 1040];
+
+      const ctx = document.getElementById('adoptionChart').getContext('2d');
+      const chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels,
+          datasets: [{
+            label: 'Users who enabled Notifications',
+            data: adoptionCounts,
+            borderColor: '#2563eb',
+            backgroundColor: 'rgba(37,99,235,0.12)',
+            fill: true,
+            tension: 0.35,
+            pointRadius: 3,
+            pointHoverRadius: 5,
+          }]
+        },
+        options: {
+          maintainAspectRatio: false,
+          plugins: {
+            legend: { display: true },
+            tooltip: {
+              callbacks: {
+                label: (ctx) => `${ctx.formattedValue} users`
+              }
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              title: { display: true, text: 'Users' },
+              grid: { color: 'rgba(15,23,42,0.05)' }
+            },
+            x: {
+              grid: { display: false }
+            }
+          }
+        }
+      });
+
+      // Summary numbers
+      const total = adoptionCounts[adoptionCounts.length - 1];
+      const start = adoptionCounts[0];
+      const growth = (((total - start) / Math.max(1, start)) * 100).toFixed(1);
+      document.getElementById('summaryTotal').textContent = total.toLocaleString();
+      document.getElementById('summaryGrowth').textContent = `+${growth}% since Sep 2024`;
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Notifications Feature Adoption</h1>
+      <p class="subtle">Timeline: Sep 2024 – Sep 2025</p>
+    </header>
+
+    <div class="grid">
+      <section class="card" style="height: 420px;">
+        <h2>Adoption over time</h2>
+        <div style="height: 340px;">
+          <canvas id="adoptionChart" aria-label="Notifications adoption chart" role="img"></canvas>
+        </div>
+        <div class="footer">
+          <span class="badge"><strong id="summaryTotal">—</strong> total users</span>
+          &nbsp; <span class="subtle" id="summaryGrowth"></span>
+        </div>
+      </section>
+
+      <aside class="card">
+        <h3>Take action</h3>
+        <p class="subtle">Reach out to users to announce the new <strong>Notifications</strong> feature.</p>
+        <div class="actions">
+          <a class="button" href="./users.html">Email users about the new addition of feature</a>
+          <a class="button secondary" href="#" onclick="history.back(); return false;">Back</a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</body>
+</html>
