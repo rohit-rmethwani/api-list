@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Select Users to Email</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const users = [
+        { name: 'Ava Thompson', email: 'ava.thompson@example.com' },
+        { name: 'Noah Bennett', email: 'noah.bennett@example.com' },
+        { name: 'Liam Carter', email: 'liam.carter@example.com' },
+        { name: 'Emma Rodriguez', email: 'emma.rodriguez@example.com' },
+        { name: 'Olivia Kim', email: 'olivia.kim@example.com' },
+        { name: 'Sophia Patel', email: 'sophia.patel@example.com' },
+        { name: 'Isabella Nguyen', email: 'isabella.nguyen@example.com' },
+        { name: 'Mia Johnson', email: 'mia.johnson@example.com' },
+        { name: 'Charlotte Li', email: 'charlotte.li@example.com' },
+        { name: 'Amelia Brown', email: 'amelia.brown@example.com' },
+        { name: 'James Wilson', email: 'james.wilson@example.com' },
+        { name: 'Benjamin Martin', email: 'benjamin.martin@example.com' },
+        { name: 'Lucas Garcia', email: 'lucas.garcia@example.com' },
+        { name: 'Henry Davis', email: 'henry.davis@example.com' },
+        { name: 'Alexander Moore', email: 'alexander.moore@example.com' },
+        { name: 'Evelyn Baker', email: 'evelyn.baker@example.com' },
+        { name: 'Harper Reed', email: 'harper.reed@example.com' },
+        { name: 'Ella Murphy', email: 'ella.murphy@example.com' },
+        { name: 'Aria Lopez', email: 'aria.lopez@example.com' },
+        { name: 'Scarlett Evans', email: 'scarlett.evans@example.com' }
+      ];
+
+      const tbody = document.querySelector('#usersTbody');
+      const searchInput = document.querySelector('#search');
+      const selectAll = document.querySelector('#selectAll');
+      const emailBtn = document.querySelector('#emailBtn');
+      const selectedCount = document.querySelector('#selectedCount');
+
+      let filteredUsers = [...users];
+
+      function renderTable() {
+        tbody.innerHTML = '';
+        filteredUsers.forEach((u, index) => {
+          const tr = document.createElement('tr');
+          tr.innerHTML = `
+            <td><input type="checkbox" class="row-check" data-index="${index}" aria-label="Select ${u.name}"></td>
+            <td>${u.name}</td>
+            <td>${u.email}</td>
+          `;
+          tbody.appendChild(tr);
+        });
+        updateSelectedCount();
+      }
+
+      function filterUsers(query) {
+        const q = query.trim().toLowerCase();
+        if (!q) {
+          filteredUsers = [...users];
+        } else {
+          filteredUsers = users.filter(u =>
+            u.name.toLowerCase().includes(q) || u.email.toLowerCase().includes(q)
+          );
+        }
+        renderTable();
+        selectAll.checked = false;
+      }
+
+      function getSelectedUsers() {
+        const checks = Array.from(document.querySelectorAll('.row-check'));
+        return checks
+          .filter(c => c.checked)
+          .map(c => filteredUsers[Number(c.getAttribute('data-index'))]);
+      }
+
+      function updateSelectedCount() {
+        const count = getSelectedUsers().length;
+        selectedCount.textContent = `${count} selected`;
+      }
+
+      // Initial render
+      renderTable();
+
+      // Wire up events
+      searchInput.addEventListener('input', (e) => filterUsers(e.target.value));
+
+      document.addEventListener('change', (e) => {
+        if (e.target && e.target.classList.contains('row-check')) {
+          updateSelectedCount();
+          const rows = document.querySelectorAll('.row-check');
+          selectAll.checked = rows.length > 0 && Array.from(rows).every(r => r.checked);
+        }
+      });
+
+      selectAll.addEventListener('change', (e) => {
+        const checked = e.target.checked;
+        document.querySelectorAll('.row-check').forEach(cb => cb.checked = checked);
+        updateSelectedCount();
+      });
+
+      emailBtn.addEventListener('click', () => {
+        const selected = getSelectedUsers();
+        if (selected.length === 0) {
+          alert('Please select at least one user.');
+          return;
+        }
+        const preview = selected.slice(0, 10).map(u => `${u.name} <${u.email}>`).join('\n');
+        const more = selected.length > 10 ? `\n...and ${selected.length - 10} more` : '';
+        const confirmed = confirm(`Send announcement email about the new Notifications feature to ${selected.length} users?\n\n${preview}${more}`);
+        if (confirmed) {
+          alert('Emails would be queued for delivery in a real system.');
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Email Users About Notifications</h1>
+      <p class="subtle">Choose recipients to notify about the new feature.</p>
+    </header>
+
+    <section class="card">
+      <div class="controls">
+        <input id="search" class="input" type="search" placeholder="Search by name or email" aria-label="Search users" />
+        <div class="subtle"><span id="selectedCount">0 selected</span></div>
+      </div>
+      <div class="table-wrap">
+        <table class="table" aria-label="Users list">
+          <thead>
+            <tr>
+              <th style="width:48px"><input id="selectAll" type="checkbox" aria-label="Select all"></th>
+              <th>Name</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody id="usersTbody"></tbody>
+        </table>
+      </div>
+      <div style="display:flex; gap:12px; margin-top:12px;">
+        <a class="button" id="emailBtn" href="#" onclick="return false;">Email selected users</a>
+        <a class="button secondary" href="./index.html">Back to dashboard</a>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
