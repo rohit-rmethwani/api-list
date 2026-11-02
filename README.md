@@ -13,6 +13,12 @@ You can find the guides for Contribution Or ***How to get Started*** from [here]
 
 * [Messages](#message)
 * [XD](#XD)
+* [Activities](#activities)
+
+### Activities
+API | Description | Languages | API KEY AVAILABLE | IS FREE ?
+|---|---|---|---|---|
+| [Bucketlist Dream of the Day](./activities/bucketlist-dream-of-the-day/README.md) | One daily experience with an image and source URL | JavaScript (Node.js 18+) | Not needed | Yes |
 
 ### Message
 API | Description | Languages | API KEY AVAILABLE
